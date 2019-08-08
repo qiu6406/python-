@@ -1,3 +1,4 @@
+#coding=utf-8
 from tkinter import *
 import os,subprocess
 import pyautogui
@@ -7,7 +8,7 @@ class App:
 
         frame = Frame(master)
         frame.pack()
-
+        
         self.button = Button(
             frame, text="后退", fg="red", command=self.back,height=5, width=10
             )
@@ -16,7 +17,7 @@ class App:
         self.hi_there = Button(
             frame, text="主页", command=self.say_hi,height=5, width=10
             )
-        self.hi_there.pack(side=LEFT)
+        self.hi_there.pack(side=RIGHT)
 
     def back(self):
         #pyautogui.hotkey('altleft','left')
